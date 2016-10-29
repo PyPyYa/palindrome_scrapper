@@ -12,7 +12,7 @@ class Palindromes(scrapy.Spider):
     }
 
     def parse(self, response):
-        for word in response.selector.xpath('//li/i/a/text()').extract():
+        for word in response.selector.xpath('//li/i[1]/a/text()').extract():
             yield {
                 'word': word
             }
