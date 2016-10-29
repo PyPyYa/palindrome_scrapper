@@ -29,4 +29,4 @@ To run:
     scrapy runspider palindrome.py -o words.json
 ```
 
-The JSON output will be encoded with utf-8.
+The JSON output will be encoded with utf-8. Some of the palindromes contain accented letters or dashes. Please have that in consideration when running your tests.
